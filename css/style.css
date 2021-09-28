@@ -43,6 +43,7 @@ h1{
   font-size: 32px;
   line-height: 2;
   text-align: center;
+  vertical-align: center;
 
 
 }
@@ -75,13 +76,17 @@ td{
   min-width: 125px;
   padding: 10px;
   text-align: center;
+  vertical-align: middle;
   background-color: #7e0825;
   text-transform: uppercase;
 
 }
 
 .rowhead{
-  border: 2px solid  #000000; 
+  border-top: 2px solid  #000000; 
+  border-right: 2px solid  #000000;
+  
+  
   
 }
 
@@ -91,7 +96,7 @@ table{
     /* border-collapse: collapse; */
     margin: auto;
     border-radius:50px 50px 50px 50px ;
-    /* need to use pseudo-classes to round out the corners of this */
+    
 }
 
 /* I gave you the selector, but not the property-value pair. 
@@ -106,6 +111,9 @@ thead tr:last-child th:last-child{
 tbody tr:last-child th.rowhead{
   border-bottom-left-radius: 50px;
 
+}
+tr:last-child td:last-child{
+  border-bottom-right-radius: 50px;
 }
 tbody tr:nth-child(even){
   background-color: #d1d1d1;
@@ -129,3 +137,8 @@ footer{
   position: sticky;
   margin-left: 0;
 }
+
+/* Things that need to be fixed: footer! (where I am losing the majority of my points
+hover? look into why that is throwing an error at me
+Run through validators
+Column Header align */
