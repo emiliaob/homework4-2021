@@ -44,8 +44,7 @@ h1{
   line-height: 2;
   text-align: center;
 
-/* Not sure if the above is actually double spaced- find out spacing requirments */
-  /*Req 2*/
+
 }
 
 p{
@@ -106,7 +105,16 @@ thead tr:last-child th:last-child{
 }
 tbody tr:last-child th.rowhead{
   border-bottom-left-radius: 50px;
+
 }
+tbody tr:nth-child(even){
+  background-color: #d1d1d1;
+}
+tbody tr:hover{
+  background-color: rgba(123,8,37,0.25) ;
+  /* rgba red green blue alpha */
+}
+
 
 
 
