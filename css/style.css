@@ -119,7 +119,7 @@ tbody tr:nth-child(even){
   background-color: #d1d1d1;
 }
 tbody tr:hover{
-  background-color: rgba(123,8,37,0.25) ;
+  background-color: rgba(126,8,37,0.25) ;
   /* rgba red green blue alpha */
 }
 
@@ -128,6 +128,7 @@ tbody tr:hover{
 
 
 footer{
+  display: block;
   width:100%;
   background:#000000;
   text-align:center;
@@ -135,7 +136,11 @@ footer{
   min-height: 75px;
   block-size: auto;
   position: sticky;
-  margin-left: 0;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  /* ISSUES! */
 }
 
 /* Things that need to be fixed: footer! (where I am losing the majority of my points
